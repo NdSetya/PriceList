@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Price list Endrew Payment</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Mobland - Mobile App Landing Page Template">
+    <meta name="keywords" content="HTML5, bootstrap, mobile, app, landing, ios, android, responsive">
+
+    <!-- Font -->
+    <link rel="dns-prefetch" href="..///fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- Themify Icons -->
+    <link rel="stylesheet" href="../css/themify-icons.css">
+    <!-- Owl carousel -->
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <!-- Main css -->
+    <link href="../css/style.css" rel="stylesheet">
+</head>
+
+<body data-spy="scroll" data-target="#navbar" data-offset="30">
+
+    <!-- Nav Menu -->
+
+    <div class="nav-menu fixed-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav class="navbar navbar-dark navbar-expand-lg">
+                        <a class="navbar-brand" href="#"><img src="../images/logo.png" class="img-fluid" alt="logo"></a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+                        <div class="collapse navbar-collapse" id="navbar">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item"> <a class="nav-link active" href="../index.html">HOME <span class="sr-only">(current)</span></a> </li>
+                                <li class="nav-item"> <a class="nav-link" href="#pricing">LIST PRODUK</a> </li>
+                                <li class="nav-item"> <a class="nav-link" href="#contact">CONTACT</a> </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Start Daftar HArga  -->
+    <style>
+        /* Tambahkan gaya untuk item */
+        .pricing-item {
+            border: 2px solid purple; /* Garis tepi berwarna abu-abu */
+            padding: 10px; /* Ruang dalam setiap item */
+            margin-bottom: 10px; /* Jarak antara setiap item */
+            width: 200px; /* Lebar setiap item */
+            float: left; /* Mengatur agar item berjejer ke kiri */
+            margin-right: 10px;
+            margin-left: 10px; /* Jarak antara setiap item ke kanan */
+            text-align: center;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .pricing-item {
+             width: 100%; /* Mengubah lebar setiap item menjadi 100% */
+                margin: 0 auto; /* Mengatur margin ke auto agar item berada di tengah */
+                float: none; /* Menghapus float agar item tidak berjejer ke kiri */
+                margin-top: 20px;
+
+        }
+}
+
+    </style>
+    
+    <div class="section" id="pricing">
+        <div class="container">
+            <div class="section-title">
+                <small>Harga Gems + Token</small>
+                <h3>Cek Sekarang</h3>
+            </div>
+    
+            <div class="card-deck">
+    
+                <div class="card pricing popular">
+                    <div class="card-head">
+                        <h4 class="text-primary">GEMS & TOKEN STUMBLE GUYS</h4><br>
+                    </div>
+                    <div id="items-container"> <!-- Tambahkan id="items-container" di sini -->
+                        <!-- Item akan ditambahkan di sini -->
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <div class="list-group-item"><p>
+                            <br><b>Kami Hanya Menerima Dengan Nominal Uang / diamond Sesuai dengan informasi di atas, Selain Itu Kami Tidak Menerimanya</b> <br><br></p>
+                            <small>Wajib Tulis Id Game Kalian (Server jika ada)</small>
+                        </div>
+                    </ul>
+                </div>
+    
+            </div>
+            <!-- // end .pricing -->
+        </div>
+    </div>
+    
+    <script>
+        // Data item
+        var itemsData = [
+            { name: "250 Gems", price: "Rp13.000" },
+            { name: "800 Gems", price: "Rp30.000" },
+            { name: "1.600 Gems + 75 Tokens", price: "Rp50.000" },
+            { name: "5.000 Gems + 275 Tokens", price: "Rp115.000" },
+            { name: "120 Tokens", price: "Rp35.000" },
+            { name: "1300 Tokens", price: "Rp290.000" },
+
+            // Tambahkan data item lainnya di sini
+        ];
+    
+        // Ambil container elemen
+        var itemsContainer = document.getElementById("items-container");
+    
+        // Loop melalui data item dan tambahkan ke dalam container
+        itemsData.forEach(function(item) {
+            var itemDiv = document.createElement("div");
+            itemDiv.className = "pricing-item"; // Tambahkan kelas untuk gaya item
+            itemDiv.innerHTML = `<div>${item.name}</div><div>${item.price}</div>`;
+            itemsContainer.appendChild(itemDiv);
+        });
+    </script>
+     
+    
+    <!-- // end .Daftar Harga -->
+
+    <!-- Start Info Kontakk -->
+    <div class="light-bg py-5" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 text-center text-lg-left">
+                    <p class="mb-2"> <span class="ti-location-pin mr-2"></span> Karangasem Dukuhan, Pagerluyung, Gedeg, Mojokerto, Jawa-Timur, Indonesia</p>
+                    <div class=" d-block d-sm-inline-block">
+                        <p class="mb-2">
+                            <span class="ti-email mr-2"></span> <a class="mr-4" href="mailto:endrewsetyah@gmail.com">support@endsetyah.com</a>
+                        </p>
+                    </div>
+                    <div class="d-block d-sm-inline-block">
+                        <p class="mb-0">
+                            <span class="ti-headphone-alt mr-2"></span> <a href="tel:085706132001">085706132001</a>
+                        </p>
+                    </div>
+
+                </div>
+                <div class="col-lg-6">
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=61552367552778&mibextid=ZbWKwL"><span class="ti-facebook"></span></a>
+                        <a href="https://x.com/Rubah85100341?t=nXsSU0QlUKCskX5rLcRInA&s=08"><span class="ti-twitter-alt"></span></a>
+                        <a href="https://instagram.com/erw_setya?igshid=ZDc4ODBmNjlmNQ"><span class="ti-instagram"></span></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- // end .Info Kontak -->
+
+
+<!-- Start Footer -->
+    <footer class="my-5 text-center">
+        <!-- Copyright removal is not prohibited! -->
+        <p class="mb-2"><small>COPYRIGHT © 2024. ALL RIGHTS RESERVED. MOBAPP</small></p>
+
+        <small>
+            <a href="#" class="m-2">PRESS</a>
+            <a href="#" class="m-2">TERMS</a>
+            <a href="#" class="m-2">PRIVACY</a>
+        </small>
+    </footer>
+<!-- end footer -->
+
+
+    <!-- jQuery and Bootstrap -->
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <!-- Plugins JS -->
+    <script src="../js/owl.carousel.min.js"></script>
+    <!-- Custom JS -->
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>
